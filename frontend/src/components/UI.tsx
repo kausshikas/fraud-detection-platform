@@ -16,7 +16,7 @@ export function StatCard({
   label: string;
   value: ReactNode;
   note?: string;
-  icon?: React.ComponentType<{ size?: number }>;
+  icon?: React.ComponentType<any>;
 }) {
   return (
     <div className="stat-card">
@@ -74,16 +74,6 @@ export function SearchBar({
   );
 }
 
-/*
- * RiskBadge
- *
- * The old version crashed when level was undefined.
- * This version safely handles:
- * - High
- * - Medium
- * - Low
- * - undefined / null / empty values
- */
 export function RiskBadge({
   level,
 }: {
