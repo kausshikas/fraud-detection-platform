@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://fraud-detection-platform-backend.onrender.com/api";
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem("fraudguard_token");
